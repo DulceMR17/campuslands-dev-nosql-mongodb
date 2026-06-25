@@ -1,9 +1,6 @@
 //Seleccionar o crear la base de datos requerida
 use('campus_colecciones_gamers');
 
-// Limpiar la colección antes de insertar para asegurar repetibilidad
-db.jugadores.drop();
-
 // Insertar 5 documentos coherentes y realistas del ecosistema shooter
 db.jugadores.insertMany([
   {
@@ -53,4 +50,3 @@ db.jugadores.insertMany([
   }
 ]);
 
-print("Semilla ejecutada con éxito. 5 perfiles insertados en la colección 'jugadores'.");
